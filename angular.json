@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/sspa-ng-nav",
             "index": "src/index.html",
+            "main": "src/main.single-spa.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -34,7 +35,6 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "main": "src/main.single-spa.ts",
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
               "libraryName": "sspa-ng-nav",
@@ -74,7 +74,8 @@
               "buildTarget": "sspa-ng-nav:build:production"
             },
             "development": {
-              "buildTarget": "sspa-ng-nav:build:development"
+              "buildTarget": "sspa-ng-nav:build:development",
+              "port": 4201
             }
           },
           "defaultConfiguration": "development"
