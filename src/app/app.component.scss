@@ -1,16 +1,13 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
 .navbar {
+  font-family: "Karla", sans-serif;
+  color: #2E0007;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fcfbf9;
   border-bottom: 1px solid #eae9e6;
 }
+
 .navbar-wrapper {
   width: 1248px;
   height: 86px;
@@ -26,9 +23,11 @@ body {
     align-items: center;
     color: #5a3e36;
     font-size: 24px;
+    font-weight: 600;
 
     img {
       margin-right: 10px;
+      height: 20px;
     }
   }
 
@@ -39,10 +38,30 @@ body {
     justify-content: center;
 
     a {
-      margin: 0 15px;
+      padding: 6px 16px;
       text-decoration: none;
-      color: #5a3e36;
+      color: #918b8b;
       font-size: 16px;
+      font-weight: 700;
+      border-radius: 8px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      &:hover {
+        background-color: #f7ecde;
+      }
+
+      &.active {
+        color: #E98971;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
@@ -52,10 +71,22 @@ body {
     justify-content: end;
     align-items: center;
     color: #5a3e36;
+    font-weight: 500;
 
-    img {
+    .avatar-container {
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       margin-left: 10px;
+      background-color: #f8beae;
+      overflow: hidden;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
       width: 30px;
       height: 30px;
     }
